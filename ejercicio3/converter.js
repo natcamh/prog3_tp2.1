@@ -6,7 +6,10 @@ class Currency {
 }
 
 class CurrencyConverter {
-    constructor() {}
+    constructor(apiUrl='api.frankfurter.app') {
+        this.apiUrl = apiUrl;
+        this.currencies = [];
+    }
 
     getCurrencies(apiUrl) {}
 
